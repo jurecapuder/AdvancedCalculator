@@ -2,7 +2,20 @@ let output = document.getElementById('output');
 let expression = '';
 
 function insertChar(char) {
-    expression += char;
+    // Check if the last character is a number
+    const lastChar = expression[expression.length - 1];
+    const isLastCharNumber = !isNaN(lastChar);
+
+    // Append the new character accordingly
+    if (isLastCharNumber && !isNaN(char)) {
+        // If the last character is a number and the new character is also a number,
+        // concatenate the new number to the previous one
+        expression += char;
+    } else {
+        // Otherwise, simply append the new character
+        expression += char;
+    }
+
     updateOutput();
 }
 
@@ -39,9 +52,9 @@ function handleKeyPress(event) {
     const keyPressed = event.key;
     if (
         /[0-9+\-*/().]/.test(keyPressed) || // Allow digits, basic operators, and parentheses
-        (keyPressed === 'Enter' || keyPressed === '=') // Allow Enter or Equals for calculation
+        (keyPressed === '=' || keyPressed === 'Enter') // Allow Equals or Enter for calculation
     ) {
-        if (keyPressed === 'Enter' || keyPressed === '=') {
+        if (keyPressed === '=' || keyPressed === 'Enter') {
             calculate();
         } else {
             insertChar(keyPressed);

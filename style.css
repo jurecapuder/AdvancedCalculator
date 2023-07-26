@@ -38,12 +38,82 @@ body {
     padding: 10px;
     border: none;
     border-radius: 5px;
-    background-color: #444;
-    color: #fff;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
-.btn:hover {
+/* Different colors for buttons */
+.basic {
+    background-color: #444;
+    color: #fff;
+}
+
+.advanced {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.miscellaneous {
+    background-color: #2ECC71;
+    color: #fff;
+}
+
+/* Make the "C" button orange */
+.basic.C {
+    background-color: #ff8800;
+}
+
+/* Add hover effect on buttons */
+.basic:hover {
     background-color: #555;
+}
+
+.advanced:hover {
+    background-color: #0056b3;
+}
+
+.miscellaneous:hover {
+    background-color: #138496;
+}
+
+/* Dark mode settings for different buttons */
+.calculator .btn {
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.calculator .output {
+    font-size: 24px;
+    text-align: right;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #333;
+}
+
+/* Different button colors on hover */
+.calculator .basic:hover {
+    background-color: #555;
+}
+
+.calculator .advanced:hover {
+    background-color: #0056b3;
+}
+
+.calculator .miscellaneous:hover {
+    background-color: #186A3B;
+}
+
+/* Make the "C" button orange */
+.basic.orange {
+    background-color: #ff8800;
+}
+
+/* Hover effect for the "C" button */
+.basic.orange:hover {
+    background-color: #e67300;
 }
