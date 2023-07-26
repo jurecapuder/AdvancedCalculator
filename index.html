@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator">
+        <div class="output" id="output"></div>
+        <div class="buttons">
+            <button class="btn" onclick="clearOutput()">C</button>
+            <button class="btn" onclick="deleteChar()">DEL</button>
+            <button class="btn" onclick="insertChar('^')">^</button>
+            <button class="btn" onclick="insertChar('/')">/</button>
+            <button class="btn" onclick="insertChar('7')">7</button>
+            <button class="btn" onclick="insertChar('8')">8</button>
+            <button class="btn" onclick="insertChar('9')">9</button>
+            <button class="btn" onclick="insertChar('*')">*</button>
+            <button class="btn" onclick="insertChar('4')">4</button>
+            <button class="btn" onclick="insertChar('5')">5</button>
+            <button class="btn" onclick="insertChar('6')">6</button>
+            <button class="btn" onclick="insertChar('-')">-</button>
+            <button class="btn" onclick="insertChar('1')">1</button>
+            <button class="btn" onclick="insertChar('2')">2</button>
+            <button class="btn" onclick="insertChar('3')">3</button>
+            <button class="btn" onclick="insertChar('+')">+</button>
+            <button class="btn" onclick="insertChar('(')">(</button>
+            <button class="btn" onclick="insertChar('0')">0</button>
+            <button class="btn" onclick="insertChar('.')">.</button>
+            <button class="btn" onclick="calculate()">=</button>
+            <button class="btn" onclick="insertChar(')')">)</button>
+            <button class="btn" onclick="insertFunction('sqrt')">√</button>
+            <button class="btn" onclick="insertFunction('sin')">sin</button>
+            <button class="btn" onclick="insertFunction('cos')">cos</button>
+            <button class="btn" onclick="insertFunction('tan')">tan</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
