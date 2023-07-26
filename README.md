@@ -1,5 +1,4 @@
 # AdvancedCalculator
-My attemps at creating a fairly advanced browser calculator.
 
 🧮 Advanced Calculator 🚀
 
