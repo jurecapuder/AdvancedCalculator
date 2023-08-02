@@ -9,111 +9,61 @@ body {
     margin: 0;
 }
 
-.calculator {
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    max-width: 300px;
-    width: 100%;
-    padding: 10px;
-}
-
-.output {
-    font-size: 24px;
-    text-align: right;
-    margin-bottom: 10px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #333;
-}
-
-.buttons {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 5px;
-}
-
-.btn {
-    font-size: 18px;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-/* Different colors for buttons */
-.basic {
+table {
+    border: 1px solid #555;
+    margin-left: auto;
+    margin-right: auto;
     background-color: #444;
-    color: #fff;
 }
 
-.advanced {
-    background-color: #007bff;
-    color: #fff;
-}
-
-.miscellaneous {
-    background-color: #2ECC71;
-    color: #fff;
-}
-
-/* Make the "C" button orange */
-.basic.C {
-    background-color: #ff8800;
-}
-
-/* Add hover effect on buttons */
-.basic:hover {
+input[type="button"] {
+    width: 100%;
+    padding: 20px;
     background-color: #555;
-}
-
-.advanced:hover {
-    background-color: #0056b3;
-}
-
-.miscellaneous:hover {
-    background-color: #138496;
-}
-
-/* Dark mode settings for different buttons */
-.calculator .btn {
     color: #fff;
+    font-size: 24px;
+    font-weight: bold;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
-.calculator .output {
-    font-size: 24px;
-    text-align: right;
-    margin-bottom: 10px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+/* Color changes for specific buttons */
+input[value="="], input[value="-"], input[value="x"], input[value="+"], input[value=","], 
+input[value="."], input[value="%"], input[value="!"], input[value="/"], input[value="("], 
+input[value=")"], input[value="^"] {
+    background-color: #228B22; /* Green */
+}
+
+input[value="cos("], input[value="sin("], input[value="tan("], input[value="log("], 
+input[value="exp("], input[value="l10e"], input[value="l2e"], input[value="log10("], 
+input[value="ln2"], input[value="sqrt("], input[value="E"], input[value="pi"] {
+    background-color: #4682B4; /* Marine Blue */
+}
+
+/* Darker shade on hover */
+input[type="button"]:hover {
     background-color: #333;
 }
 
-/* Different button colors on hover */
-.calculator .basic:hover {
-    background-color: #555;
+/* Orange color for "C" button */
+input[value="C"] {
+    background-color: orange;
 }
 
-.calculator .advanced:hover {
-    background-color: #0056b3;
+input[type="text"] {
+    padding: 20px 240px;
+    font-size: 24px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    border: 2px solid #555;
+    text-align: left;
+    background-color: #333;
+    color: #fff;
 }
 
-.calculator .miscellaneous:hover {
-    background-color: #186A3B;
-}
-
-/* Make the "C" button orange */
-.basic.orange {
-    background-color: #ff8800;
-}
-
-/* Hover effect for the "C" button */
-.basic.orange:hover {
-    background-color: #e67300;
+display {
+    text-align: left;
 }
